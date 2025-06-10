@@ -35,9 +35,6 @@
   }
 }
 
-
-
-/* Logo konteyneri */
 .logo_container {
   width: 220px; 
   overflow: hidden;
@@ -45,7 +42,6 @@
   border-radius: 3rem;
 }
 
-/* Animatsiyalangan logo */
 .logo_site_name {
   display: inline-block;
   white-space: nowrap;
@@ -88,6 +84,7 @@
   .navibar {
     *{
       font-size: 1.4rem;
+      
     }
 
   }
@@ -103,7 +100,7 @@
   .navibar {
     gap: 0.5rem;
     *{
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
   }
@@ -121,16 +118,16 @@
   }
 
   .navibar {
-    gap: 0.5rem;
+    gap: 1.3rem;
     *{
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
 
   }
 
   .navbar_main_div {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
      .logo_container {
     width: 80px;

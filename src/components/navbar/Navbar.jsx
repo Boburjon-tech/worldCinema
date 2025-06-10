@@ -12,8 +12,8 @@ function Navbar() {
         <nav className="navibar">
             <Link  className="navbar_link" to="/">Home</Link>
             <Link className="navbar_link" to="/films">Films</Link>
-            <Link className="navbar_link" to="/about">About Us</Link>
-            <Link className="navbar_link" to="/addfilm">Add New Film</Link>
+            <Link className="navbar_link" to="/about">About</Link>
+            <Link className="navbar_link" to="/addfilm">New</Link>
         </nav>
     </div>
   )
