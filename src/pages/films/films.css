@@ -1,0 +1,153 @@
+.films_container {
+     display: flex;
+     overflow-y: auto;
+     width: 100%;
+     padding: 2rem;
+}
+
+.film__iframe{
+     /* max-width: 700px; */
+     width: 100%;
+     height: 350px;
+     border: 2px solid #abb;
+     border-radius: 1.4rem;
+}
+
+.film__iframe:hover{
+     box-shadow: #abb 0px 0px 20px;     
+}
+
+.films_list{
+     width: 100%;
+           display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     gap: 3rem;
+}
+
+.film_div {
+     display: flex;
+     gap: 2rem;
+    
+     background-color: #282B30;
+}
+
+.play_button {
+     border: none;
+     border-radius: 1.4rem;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     max-width: 45rem;
+     height: 25rem;
+
+     img {
+          width: 100%;
+          border-radius: 1.4rem;
+          height: 25rem;
+          object-fit: cover;
+     }
+}
+
+.play_button :hover {
+     box-shadow: #abb 0px 0px 20px;
+}
+
+.film_abouts {
+     width: 100%;
+     max-width: 25rem;
+}
+
+.item_title {
+     font-size: 2.4rem;
+     color:gold;
+}
+
+.item_runtime {
+     font-size: 1.2rem;
+     color:white;
+}
+
+.item_country {
+     font-size: 1.4rem;
+     color: #ff3d00;
+}
+
+.item_genre {
+     font-size: 1.5rem;
+     color:#fff;
+}
+
+.item_actors {
+     font-size: 1.2rem;
+     color:grey;
+}
+
+
+
+@media screen and (max-width : 860px) {
+     .film_div {
+          flex-direction: column;
+          width: 100%;
+          gap: 1rem;
+     }
+
+     .play_button {
+          width: 100%;
+          max-width: 107rem;
+          img {
+               width: 100%;
+               height: 25rem;
+          }
+     }
+}
+
+.loader_wrap {
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     align-items: center;
+     justify-content: center;
+}
+
+.loader {
+        width: 64px;
+        height: 64px;
+        position: relative;
+        background-image:
+          linear-gradient(#FFF 16px, transparent 0) ,
+          linear-gradient(#FF3D00 16px, transparent 0) ,
+          linear-gradient(#FF3D00 16px, transparent 0) ,
+          linear-gradient(#FFF 16px, transparent 0);
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: left top , left bottom , right top , right bottom;
+        animation: rotate 1s linear infinite;
+      }
+      @keyframes rotate {
+        0% {
+          width: 64px;
+          height: 64px;
+          transform: rotate(0deg)
+        }
+        50% {
+          width: 30px;
+          height: 30px;
+          transform: rotate(180deg)
+        }
+        100% {
+          width: 64px;
+          height: 64px;
+          transform: rotate(360deg)
+        }
+      }
+    
+
+
+
+  @media (max-width:450px) {
+     .films_list {
+          display: flex;
+          flex-direction: column;
+     }
+  }
+  

@@ -1,0 +1,138 @@
+.light_navbar_main_div {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-bottom-left-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
+}
+
+.navbar_main_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #202020;
+  padding: 2rem;
+  border-bottom-left-radius: 1.4rem;
+  border-bottom-right-radius: 1.4rem;
+}
+
+.navibar {
+  margin-left: auto;
+  display: flex;
+  gap: 1.6rem;
+
+  * {
+    font-size: 2rem;
+    font-weight: bold;
+    color: navy;
+  }
+
+  *:hover {
+    color: #fcd800;
+  }
+}
+
+
+
+/* Logo konteyneri */
+.logo_container {
+  width: 220px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 3rem;
+}
+
+/* Animatsiyalangan logo */
+.logo_site_name {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide-left 10s linear infinite;
+  
+  color: gold;
+  font-size: 3rem;
+  align-items: center;
+  border-radius: 3rem;
+  border: 2px solid gold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+.logo_site_name:hover {
+  box-shadow: gold 0px 0px 20px;
+  transition: all 0.5s ease;
+}
+
+/* Harakat animatsiyasi */
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+@media (max-width:843px){
+  .logo_site_name {
+    font-size: 2rem;
+
+  }
+  .navibar {
+    *{
+      font-size: 1.4rem;
+    }
+
+  }
+   .logo_container {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:637px) {
+  .logo_site_name {
+    font-size: 1.4rem;
+  }
+  .navibar {
+    gap: 0.5rem;
+    *{
+      font-size: 1rem;
+    }
+
+  }
+     .logo_container {
+    width: 120px;
+  }
+ 
+}
+
+@media (max-width:486px) {
+  .logo_site_name {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navibar {
+    gap: 0.5rem;
+    *{
+      font-size: 0.8rem;
+    }
+
+  }
+
+  .navbar_main_div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+     .logo_container {
+    width: 80px;
+  }
+}

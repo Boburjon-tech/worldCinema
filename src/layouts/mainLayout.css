@@ -1,0 +1,49 @@
+.site_main_div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+
+}
+
+.main__content{
+    background-color: #282B30;
+    padding: 2.4rem;
+}
+
+.darkmode__btn_div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+   
+    button {
+        border-radius: 1.2rem;
+        display: flex;
+        align-items: center;
+        border: 2px solid grey;
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        padding: 0.5rem;
+        
+    }
+}
+
+@media screen and (max-width:860px) {
+    .site_main_div {
+        display: flex;
+    }
+
+    .main__content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .main__content {
+        padding: 0;
+    }
+}
